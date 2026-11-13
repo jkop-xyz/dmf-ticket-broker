@@ -38,3 +38,7 @@ scripts/test
 ```
 
 The ranking logic (`Engine.lua`) and the game data (`Data.lua`) use no WoW API, so they are tested directly. The rest of the addon is tested against a stubbed client. Domain terms are defined in [`GLOSSARY.md`](GLOSSARY.md), and design decisions are recorded in [`docs/adr/`](docs/adr/).
+
+## License
+
+[MIT](LICENSE). The bundled libraries in [`DMFTicketBroker/Libs/`](DMFTicketBroker/Libs/) (LibStub, CallbackHandler-1.0, LibDataBroker-1.1, LibDBIcon-1.0) are third-party code and keep their own licenses.
