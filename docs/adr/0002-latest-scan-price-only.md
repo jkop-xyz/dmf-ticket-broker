@@ -1,0 +1,3 @@
+# Use only Auctionator's latest Scan Price via its public API
+
+Auctionator keeps about 21 days of per-day price history, but only in internal, unsupported structures (`Auctionator.Database:GetPriceHistory`, the `AUCTIONATOR_PRICE_DATABASE` saved variable, partly CBOR-serialized on Forever). Its public `Auctionator.API.v1` only exposes the latest minimum buyout and its age in days. We price everything from `GetAuctionPriceByItemID` and show `GetAuctionAgeByItemID` as the Price Age, and accept that we get no history smoothing. In exchange the addon doesn't break whenever Auctionator changes its internals. If smoothing turns out to be essential, ask upstream for a public history API rather than reading the internals.

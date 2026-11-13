@@ -1,0 +1,5 @@
+#!/bin/sh
+# Runs the busted suite under Lua 5.1 (the WoW client's Lua version).
+# Uses the busted runner module directly, so only the lua51-busted library is needed.
+cd "$(dirname "$0")/.." || exit 1
+exec lua5.1 -e 'require("busted.runner")({ standalone = false })' "$@"

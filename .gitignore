@@ -1,0 +1,8 @@
+# Saved Wowhead pages used to check game data: Wowhead's content, not ours to publish.
+.scratch/wowhead/
+
+# Local Claude Code settings (permissions).
+.claude/settings.local.json
+
+# Release builds.
+dist/

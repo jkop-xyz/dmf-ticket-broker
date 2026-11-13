@@ -1,0 +1,27 @@
+## Interface: 16001
+## Title: DMF Ticket Broker
+## Notes: Ranks the cheapest Darkmoon Faire Prize Ticket turn-ins using Auctionator prices.
+## Version: 0.1.0
+## RequiredDeps: Auctionator
+## SavedVariables: DMFTicketBrokerDB
+## SavedVariablesPerCharacter: DMFTicketBrokerCharDB
+## IconTexture: Interface\Icons\INV_Misc_Ticket_Darkmoon_01
+## AddonCompartmentFunc: DMFTicketBroker_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: DMFTicketBroker_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: DMFTicketBroker_OnAddonCompartmentLeave
+## Category: Auction House
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+Data.lua
+Engine.lua
+Prices.lua
+Character.lua
+Settings.lua
+Shopping.lua
+UI.lua
+Minimap.lua
+Core.lua

@@ -1,0 +1,3 @@
+# In-game only, no external tool or export
+
+DMF Ticket Broker does all of its pricing and ranking inside the game client from Auctionator's live data. An existing project, `TheoSchramm/wow-dmf-calculator`, takes the other approach: it is a website that parses an exported `Auctionator.lua` SavedVariables file. We rejected that approach because it means logging out or reloading to refresh the data, and it takes the player out of the game. In-game also gives us the character's level, reputation, professions and known recipes, which a file export can't fully provide. Don't add an export-to-web feature without revisiting this decision.
